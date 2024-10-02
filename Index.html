@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARIEDADESEXPRESS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1>MUNDOSHOES</h1>
+    </header>
+
+    <!-- Temporizador de cuenta regresiva -->
+<div id="countdown-timer">
+    <p class="offer-message">¡Grandes Ofertas Solo Por Tiempo Limitado!</p>
+    <h2>La oferta terminará en:</h2>
+    <div id="timer">
+        <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+    </div>
+</div>
+
+
+    <br>
+    <center><h2>Ofertas Especiales</h2></center>
+    <section class="product-offers">
+
+    <!-- Producto 1 -->
+<div class="product">
+    <div class="product-image-container">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="img/brahma1.png" class="product-image">
+                <img src="img/1.png" class="product-image">
+                <img src="img/2.png" class="product-image">
+                <img src="img/3.png" class="product-image">
+                <img src="img/4.png" class="product-image">
+                <img src="img/5.png" class="product-image">
+                <img src="img/6.png" class="product-image">
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-btn" onclick="moveCarousel(this, -1)">&#10094;</button>
+                <button class="next-btn" onclick="moveCarousel(this, 1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <h3>Botas Brahma</h3>
+    <!-- Precio original -->
+    <p class="original-price" data-original-price="220999" data-product-name="brahama">$220,999</p>
+    <!-- Precio con descuento -->
+    <p class="price" data-product-name="brahama">$149,900</p>
+    <button class="btn-buy" onclick="window.location.href='https://www.ejemplo.com';">Comprar</button>
+    <p class="toggle-details" onclick="toggleDetails('details-1')">Ver Detalles</p>
+    <div class="product-details" id="details-1" style="display: none;">
+        <p><span class="highlight">Botas</span> Brahma:</p>
+        <p><span class="highlight">Tipo</span>: Réplica AAA:</p>
+        <p><span class="highlight">Tallas</span>: 33 al 44:</p>
+        <p><span class="highlight">Suela</span>: de caucho:</p>
+        <p><span class="highlight">Calidad</span>: 100% Cuero:</p>
+        <p><span class="highlight">Ajuste</span>: con cordones planos:</p>
+    </div>
+</div>
+
+
+
+       <!-- Producto 2 -->
+<div class="product">
+    <div class="product-image-container">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="img/puma1 (1).png" class="product-image">
+                <img src="img/puma1 (2).png" class="product-image">
+                <img src="img/puma1 (3).png" class="product-image">
+                <img src="img/puma1 (4).png" class="product-image">
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-btn" onclick="moveCarousel(this, -1)">&#10094;</button>
+                <button class="next-btn" onclick="moveCarousel(this, 1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <h3>Tenis Puma Linse</h3>
+    <!-- Precio original -->
+    <p class="original-price" data-original-price="120999">$120,999</p>
+    <!-- Precio con descuento -->
+    <p class="price">$75,000</p>
+    <button class="btn-buy" onclick="window.location.href='https://www.ejemplo.com';">Comprar</button>
+    <p class="toggle-details" onclick="toggleDetails('details-2')">Ver Detalles</p>
+    <div class="product-details" id="details-2" style="display: none;">
+        <p>
+            <p><span class="highlight">Tenis puma</span> Linse:</p>
+            <p><span class="highlight">Tipo</span>: Réplica AAA:</p>
+            <p><span class="highlight">Tallas</span>: 35 al 40:</p>
+            <p><span class="highlight">Suela</span>: de Goma:</p>
+            <p><span class="highlight">Calidad</span>: 100% de alta calidad:</p>
+            <p><span class="highlight">Ajuste</span>: con cordones :</p>
+        
+    </div>
+</div>
+
+
+       <!-- Producto 3 -->
+<div class="product">
+    <div class="product-image-container">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="img/tenis puma4.png" class="product-image">
+                <img src="img/tenis puma3.png" class="product-image">
+                <img src="img/tenis puma5.png" class="product-image">
+                <img src="img/tenis puma2.png" class="product-image">
+                <img src="img/tenis puma1.png" class="product-image">
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-btn" onclick="moveCarousel(this, -1)">&#10094;</button>
+                <button class="next-btn" onclick="moveCarousel(this, 1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <h3>Tenis Puma</h3>
+    <!-- Precio original -->
+    <p class="original-price" data-original-price="115999">$115,999</p>
+    <!-- Precio con descuento -->
+    <p class="price">$75,000</p>
+    <button class="btn-buy" onclick="window.location.href='https://www.ejemplo.com';">Comprar</button>
+    <p class="toggle-details" onclick="toggleDetails('details-3')">Ver Detalles</p>
+    <div class="product-details" id="details-3" style="display: none;">
+        <p>
+            <p><span class="highlight">Tenis puma</span> Linse:</p>
+            <p><span class="highlight">Tipo</span>: Réplica AAA:</p>
+            <p><span class="highlight">Tallas</span>: 35 al 40:</p>
+            <p><span class="highlight">Suela</span>: de Goma:</p>
+            <p><span class="highlight">Calidad</span>: 100% de alta calidad:</p>
+            <p><span class="highlight">Ajuste</span>: con cordones :</p>
+            <p><span class="highlight">Material</span>: Transpirable</p>
+    </div>
+</div>
+
+        <!-- Producto 4 -->
+<div class="product">
+    <div class="product-image-container">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="img/tommy1.jpg" class="product-image">
+                <img src="img/tommy2.png" class="product-image">
+                <img src="img/tommy3.png" class="product-image">
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-btn" onclick="moveCarousel(this, -1)">&#10094;</button>
+                <button class="next-btn" onclick="moveCarousel(this, 1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <h3>Tenis Tommy</h3>
+    <!-- Precio original -->
+    <p class="original-price" data-original-price="99900">$99,900</p>
+    <!-- Precio con descuento -->
+    <p class="price">$55,000</p>
+    <button class="btn-buy" onclick="window.location.href='https://www.ejemplo.com';">Comprar</button>
+    <p class="toggle-details" onclick="toggleDetails('details-4')">Ver Detalles</p>
+    <div class="product-details" id="details-4" style="display: none;">
+        <p>
+            <p><span class="highlight">Tenis</span> Tommy:</p>
+            <p><span class="highlight">Tipo</span>: Réplica AAA:</p>
+            <p><span class="highlight">Tallas</span>: 35 al 40:</p>
+            <p><span class="highlight">Suela</span>: de Goma:</p>
+            <p><span class="highlight">Calidad</span>: 100% de alta calidad:</p>
+            <p><span class="highlight">Ajuste</span>: con cordones :</p>
+            <p><span class="highlight">Material</span>: Sintetico</p>
+    </div>
+</div>
+
+
+       <!-- Producto 5 -->
+<div class="product">
+    <div class="product-image-container">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="img/tropical1 (1).png" class="product-image">
+                <img src="img/tropical1 (2).png" class="product-image">
+                <img src="img/tropical1 (3).png" class="product-image">
+                <img src="img/tropical1 (4).png" class="product-image">
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-btn" onclick="moveCarousel(this, -1)">&#10094;</button>
+                <button class="next-btn" onclick="moveCarousel(this, 1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <h3>Tenis Tropical</h3>
+    <!-- Precio original -->
+    <p class="original-price" data-original-price="105999">$105.999</p>
+    <!-- Precio con descuento -->
+    <p class="price">$53,000</p>
+    <button class="btn-buy" onclick="window.location.href='https://www.ejemplo.com';">Comprar</button>
+    <p class="toggle-details" onclick="toggleDetails('details-5')">Ver Detalles</p>
+    <div class="product-details" id="details-5" style="display: none;">
+        <p>Este es el producto 5. Tiene las siguientes características: ...</p>
+    </div>
+</div>
+
+
+       <!-- Producto 6 -->
+<div class="product">
+    <div class="product-image-container">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="img/alisiatenis (1).png" class="product-image">
+                <img src="img/alisiatenis (2).png" class="product-image">
+                <img src="img/alisiatenis (3).png" class="product-image">
+                <img src="img/alisiatenis (4).png" class="product-image">
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-btn" onclick="moveCarousel(this, -1)">&#10094;</button>
+                <button class="next-btn" onclick="moveCarousel(this, 1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <h3>Tenis Alisia</h3>
+    <!-- El precio original -->
+    <p class="original-price" data-original-price="126000">$126.000</p>
+    <!-- El precio con descuento -->
+    <p class="price">$48,000</p>
+    <button class="btn-buy" onclick="window.location.href='https://www.ejemplo.com';">Comprar</button>
+    <p class="toggle-details" onclick="toggleDetails('details-6')">Ver Detalles</p>
+    <div class="product-details" id="details-6" style="display: none;">
+        <p>Este es el producto 6. Tiene las siguientes características: ...</p>
+    </div>
+</div>
+
+
+<!-- Producto 7 -->
+<div class="product">
+    <div class="product-image-container">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="img/samba1 (1).png" class="product-image">
+                <img src="img/samba1 (2).png" class="product-image">
+                <img src="img/samba1 (3).png" class="product-image">
+                <img src="img/samba1 (4).png" class="product-image">
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-btn" onclick="moveCarousel(this, -1)">&#10094;</button>
+                <button class="next-btn" onclick="moveCarousel(this, 1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <h3>SAMBA UNISEX</h3>
+    <!-- El precio original -->
+    <p class="original-price" data-original-price="118900">$118.900</p>
+    <!-- El precio con descuento -->
+    <p class="price">$75,000</p>
+    <button class="btn-buy" onclick="window.location.href='https://www.ejemplo.com';">Comprar</button>
+    <p class="toggle-details" onclick="toggleDetails('details-7')">Ver Detalles</p>
+    <div class="product-details" id="details-7" style="display: none;">
+        <p>
+            <p><span class="highlight">Tenis samba</span> unisex:</p>
+            <p><span class="highlight">Tipo</span>: Réplica AAA:</p>
+            <p><span class="highlight">Tallas</span>: 35 al 43:</p>
+            <p><span class="highlight">Suela</span>: de Goma:</p>
+            <p><span class="highlight">Calidad</span>: 100% de alta calidad:</p>
+            <p><span class="highlight">Ajuste</span>: con cordones :</p>
+            <p><span class="highlight">Material</span>:Parte superior de cuero suave con superposiciones de gamuza</p>
+    </div>
+</div>
+
+
+
+
+        <!-- Producto 8 -->
+<div class="product">
+    <div class="product-image-container">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="img/nikee1 (1).png" class="product-image">
+                <img src="img/nikee1 (2).png" class="product-image">
+                <img src="img/nikee1 (3).png" class="product-image">
+                <img src="img/nikee1 (4).png" class="product-image">
+                <img src="img/nikee1 (5).png" class="product-image">
+                <img src="img/nikee1 (6).png" class="product-image">
+                <img src="img/nikee1 (7).png" class="product-image">
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-btn" onclick="moveCarousel(this, -1)">&#10094;</button>
+                <button class="next-btn" onclick="moveCarousel(this, 1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <h3>Tenis nike running</h3>
+    <!-- El precio original -->
+    <p class="original-price" data-original-price="126,000">$120.000</p>
+    <!-- El precio con descuento -->
+    <p class="price">$75,000</p>
+    <button class="btn-buy" onclick="window.location.href='https://www.ejemplo.com';">Comprar</button>
+    <p class="toggle-details" onclick="toggleDetails('details-8')">Ver Detalles</p>
+    <div class="product-details" id="details-8" style="display: none;">
+        <p> <p><span class="highlight">Tenis nike</span> Running:</p>
+        <p><span class="highlight">Tipo</span>: Réplica AAA:</p>
+        <p><span class="highlight">Tallas</span>: 35 al 43:</p>
+        <p><span class="highlight">Suela</span>: de Goma:</p>
+        <p><span class="highlight">Calidad</span>: 100% de alta calidad:</p>
+        <p><span class="highlight">Ajuste</span>: con cordones :</p>
+        <p><span class="highlight">Material</span>:sintetico</p>
+    </div>
+</div>
+
+
+    </section>
+
+    
+    <script src="funcion de reinicio.js"></script>
+    <script src="script.js"></script>  
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
