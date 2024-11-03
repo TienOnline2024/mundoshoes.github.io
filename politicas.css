@@ -68,14 +68,14 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 5px 0; /* Se ha reducido el padding */
+    padding: 3px 0; /* Se ha reducido el padding */
     position: relative; /* Cambiado a relative para un mejor control */
     width: 100%;
 }
 
 footer .boton {
     display: block;
-    margin: 5px auto; /* Se ha reducido el margen */
+    margin: 3px auto; /* Se ha reducido el margen */
     background-color: #555;
     color: #fff;
     padding: 5px 15px; /* Se ha reducido el padding del botón */
