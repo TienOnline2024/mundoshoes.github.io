@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .product { border: 1px solid #ddd; padding: 10px; margin: 10px; display: inline-block; }
+        .product img { width: 100px; height: 100px; }
+        .edit-btn, .delete-btn { margin: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+    <div id="product-container"></div>
+    
+    <h2>Agregar Nuevo Producto</h2>
+    <input type="text" id="product-name" placeholder="Nombre del producto">
+    <input type="number" id="product-price" placeholder="Precio">
+    <input type="text" id="product-image" placeholder="URL de la imagen">
+    <button onclick="addProduct()">Agregar</button>
+    
+    <script>
+        let products = JSON.parse(localStorage.getItem('products')) || [];
+        
+        function displayProducts() {
+            const container = document.getElementById('product-container');
+            container.innerHTML = '';
+            products.forEach((product, index) => {
+                container.innerHTML += `
+                    <div class="product">
+                        <img src="${product.image}" alt="${product.name}">
+                        <p><strong>${product.name}</strong></p>
+                        <p>Precio: $${product.price}</p>
+                        <button class="edit-btn" onclick="editProduct(${index})">Editar</button>
+                        <button class="delete-btn" onclick="deleteProduct(${index})">Eliminar</button>
+                    </div>
+                `;
+            });
+            localStorage.setItem('products', JSON.stringify(products));
+        }
+        
+        function addProduct() {
+            const name = document.getElementById('product-name').value;
+            const price = document.getElementById('product-price').value;
+            const image = document.getElementById('product-image').value;
+            if (name && price && image) {
+                products.push({ name, price, image });
+                displayProducts();
+            }
+        }
+        
+        function editProduct(index) {
+            const newName = prompt("Nuevo nombre:", products[index].name);
+            const newPrice = prompt("Nuevo precio:", products[index].price);
+            const newImage = prompt("Nueva URL de imagen:", products[index].image);
+            if (newName && newPrice && newImage) {
+                products[index] = { name: newName, price: newPrice, image: newImage };
+                displayProducts();
+            }
+        }
+        
+        function deleteProduct(index) {
+            products.splice(index, 1);
+            displayProducts();
+        }
+        
+        displayProducts();
+    </script>
+</body>
+</html>
